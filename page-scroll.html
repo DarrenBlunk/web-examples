@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<style type="text/css">
+    * {
+    padding: 0px;
+    margin: 0px;
+}
+#sidebar {
+	background-color: aliceblue;
+    position: fixed;
+    height: 200px;
+    width: 50px;
+    right: 0px;
+    top: calc(50% - 100px - 20px);
+    border-radius: 36px 0 0 36px;
+    opacity: 0.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 10px 0;
+}
+
+.navButton {
+	background-color: black;
+    border-radius: 50%;
+    height: 20px;
+    width : 20px;
+    margin: 20%;
+    cursor:pointer;
+}
+.page {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: black;
+    font-family: ubuntu;
+    font-size: 60px;
+}
+.headText {
+	opacity: 0.3;
+}
+#card-1 {
+	background-color: #5C94FC;
+}
+#card-2 {
+	background-color: #FFE164;
+}
+#card-3 {
+	background-color: #483C6B;
+}
+#card-4 {
+	background-color: #FE5E78;
+}
+#card-5 {
+	background-color: #72543A;
+}</style>
+<title>Scroller</title>
+
+</head>
+<body>
+<nav id="sidebar">
+<div class="navButton" id="btnID-1"></div>
+<div class="navButton" id="btnID-2"></div>
+<div class="navButton" id="btnID-3"></div>
+<div class="navButton" id="btnID-4"></div>
+<div class="navButton" id="btnID-5"></div>
+</nav>
+
+<div class="page" id="card-1"><span class="headText">Page 1</span></div>
+<div class="page" id="card-2"><span class="headText">Page 2</span></div>
+<div class="page" id="card-3"><span class="headText">Page 3</span></div>
+<div class="page" id="card-4"><span class="headText">Page 4</span></div>
+<div class="page" id="card-5"><span class="headText">Page 5</span></div>
+
+
+<script type="text/javascript">
+    document.getElementById("btnID-1").onclick = function(){
+document.getElementById("card-1").scrollIntoView({behavior : "smooth"})    
+}
+document.getElementById("btnID-2").onclick = function(){
+document.getElementById("card-2").scrollIntoView({behavior : "smooth"})    
+}
+document.getElementById("btnID-3").onclick = function(){
+document.getElementById("card-3").scrollIntoView({behavior : "smooth"})    
+}
+document.getElementById("btnID-4").onclick = function(){
+document.getElementById("card-4").scrollIntoView({behavior : "smooth"})    
+}
+document.getElementById("btnID-5").onclick = function(){
+document.getElementById("card-5").scrollIntoView({behavior : "smooth"})    
+} 
+</script>
+</body>
+</html>
