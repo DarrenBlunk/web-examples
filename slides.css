@@ -21,11 +21,14 @@ div {
     align-items: center;
     flex: 1;
     transition: all .5s ease-in-out;
-    filter: grayscale(.9);
 }
 
 div:hover {
     flex:1.4;
     filter: grayscale(0);
 
+}
+
+.imgs {
+    filter: grayscale(.9);
 }
