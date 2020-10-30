@@ -20,9 +20,12 @@ div {
     justify-content: center;
     align-items: center;
     flex: 1;
-    transition: all .5s;
+    transition: all .5s ease-in-out;
+    filter: grayscale(.9);
 }
 
 div:hover {
-    flex:2;
+    flex:1.4;
+    filter: grayscale(0);
+
 }
